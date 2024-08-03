@@ -1,5 +1,5 @@
 import mysql.connector
-import pandas as pd
+#import pandas as pd
 
 mysavdb = mysql.connector.connect(
     host = "localhost",
@@ -78,4 +78,105 @@ mycursor.execute("select * from ineuron.fsds where first_name ='sally' and class
 for i in mycursor:
     print(i)
 
- 
+print('---------------NEW QUERY RESULTS BELOW------------------------')
+mycursor.execute("update ineuron.fsds set first_name = 'jane' , last_name = 'sarah' where student_id = 126 ")
+
+mysavdb.commit()
+
+mycursor.execute("select * from ineuron.fsds")
+
+for i in mycursor:
+    print(i)
+
+print('---------------NEW QUERY RESULTS BELOW------------------------')
+
+mycursor.execute("update ineuron.fsds set class = 'mysql'")
+
+mysavdb.commit()
+
+mycursor.execute("select * from ineuron.fsds")
+
+for i in mycursor:
+    print(i)
+
+print('---------------NEW QUERY RESULTS BELOW------------------------')
+
+mycursor.execute("delete from ineuron.fsds where last_name = 'Singh'")
+
+mysavdb.commit()
+
+mycursor.execute("select * from ineuron.fsds")
+
+for i in mycursor:
+    print(i)
+
+print('---------------NEW QUERY RESULTS BELOW------------------------')
+
+mycursor.execute("select min(student_id) from ineuron.fsds")
+
+for i in mycursor:
+    print(i)
+
+print('---------------NEW QUERY RESULTS BELOW------------------------')
+
+mycursor.execute("select max(student_id) from ineuron.fsds")
+
+for i in mycursor:
+    print(i)
+
+
+print('---------------NEW QUERY RESULTS BELOW------------------------')
+
+mycursor.execute("select count(student_id) from ineuron.fsds")
+
+for i in mycursor:
+    print(i)
+
+print('---------------NEW QUERY RESULTS BELOW------------------------')
+
+mycursor.execute("update ineuron.fsds set class = 'sql' where student_id between 125 and 128")
+
+mysavdb.commit()
+
+mycursor.execute("select * from ineuron.fsds")
+
+for i in mycursor:
+    print(i)
+
+print('---------------NEW QUERY RESULTS BELOW------------------------')
+
+mycursor.execute("update ineuron.fsds set class = 'mongodb' where student_id between 129 and 133")
+
+mysavdb.commit()
+
+mycursor.execute("select * from ineuron.fsds")
+
+for i in mycursor:
+    print(i)
+
+print('---------------NEW QUERY RESULTS BELOW------------------------')
+
+mycursor.execute("select count(*) , class from ineuron.fsds group by class")
+
+for i in mycursor:
+    print(i)
+
+print('---------------NEW QUERY RESULTS BELOW------------------------')
+
+mycursor.execute("drop table ineuron.fsds")
+
+mysavdb.commit()
+
+for i in mycursor:
+    print(i)    
+
+print('---------------NEW QUERY RESULTS BELOW------------------------')
+
+mycursor.execute("drop database ineuron")
+
+mysavdb.commit()
+
+for i in mycursor:
+    print(i)    
+
+print('---------------END OF QUERY RESULTS------------------------')  
