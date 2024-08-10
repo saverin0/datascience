@@ -322,3 +322,65 @@
 2024-08-10 21:10:57,105 DEBUG Flattened data: [20, 30, 70, 40, 50]
 2024-08-10 21:10:57,105 DEBUG Flattened data: [10, 20, 30, 70, 40, 50, 60]
 2024-08-10 21:10:57,105 INFO Length of flattened tuple: 7
+2024-08-10 23:04:01,417 ERROR No such comm target registered: jupyter.widget.control
+2024-08-10 23:04:01,424 WARNING No such comm: 4632cc21-9cab-4a8b-974b-c37efe70b1aa
+2024-08-10 23:04:01,424 DEBUG Current comms: []
+2024-08-10 23:05:42,692 INFO List Initialized: [1, 2, 3, 4, 5]
+2024-08-10 23:05:48,121 INFO Search Operation.....
+2024-08-10 23:05:48,122 INFO Successful Search
+2024-08-10 23:05:48,641 INFO Search Operation.....
+2024-08-10 23:05:48,642 INFO Unsuccessful Search
+2024-08-10 23:05:57,242 ERROR Invalid input for array size. Must be a positive integer.
+2024-08-10 23:05:57,242 ERROR invalid literal for int() with base 10: '1,2,3,4,5,6,7,8'
+Traceback (most recent call last):
+  File "/tmp/ipykernel_112/1977325211.py", line 10, in __init__
+    size = int(input("Enter the size of the array: "))
+ValueError: invalid literal for int() with base 10: '1,2,3,4,5,6,7,8'
+2024-08-10 23:06:08,041 INFO List Initialized: [1, 2, 3, 4, 5]
+2024-08-10 23:06:09,807 INFO Search Operation started...
+2024-08-10 23:06:09,807 INFO Successful Search: Found target 5 at index 4.
+2024-08-10 23:06:10,629 INFO Search Operation started...
+2024-08-10 23:06:10,631 INFO Successful Search: Found target 1 at index 0.
+2024-08-10 23:06:13,987 INFO This is to add element to dict
+2024-08-10 23:06:13,987 INFO This element is Added/Updated into dict 
+2024-08-10 23:06:14,450 INFO This is to add element to dict
+2024-08-10 23:06:14,451 INFO This element is Added/Updated into dict 
+2024-08-10 23:06:14,987 INFO This element is displayed from dict
+2024-08-10 23:06:16,121 ERROR This element is not found in dict
+2024-08-10 23:06:16,408 ERROR This element is not found in dict
+2024-08-10 23:06:16,669 ERROR This element is not found in dict
+2024-08-10 23:06:16,939 INFO This element is deleted from dict
+2024-08-10 23:06:17,194 INFO This element is displayed from dict
+2024-08-10 23:06:20,126 INFO Initialized with data: (10, 20, (30, 40), 50, 60)
+2024-08-10 23:06:20,367 DEBUG Flattened data: [30, 40]
+2024-08-10 23:06:20,368 DEBUG Flattened data: [10, 20, 30, 40, 50, 60]
+2024-08-10 23:06:20,369 INFO Retrieved element at index 1: 20
+2024-08-10 23:06:20,617 DEBUG Flattened data: [30, 40]
+2024-08-10 23:06:20,617 DEBUG Flattened data: [10, 20, 30, 40, 50, 60]
+2024-08-10 23:06:20,617 INFO Retrieved slice from index -3 to None: [40, 50, 60]
+2024-08-10 23:06:20,830 INFO Found element 40 at indices [(2, 1)]
+2024-08-10 23:06:21,048 WARNING Element 170 not found.
+2024-08-10 23:06:21,526 INFO Initialized with data: (10, 20, 30, 40, 50, 60)
+2024-08-10 23:06:21,758 INFO Found element 40 at indices [(3,)]
+2024-08-10 23:06:23,010 INFO Initialized with data: (10, (20, 30, (70, 40), 50), 40, 60)
+2024-08-10 23:06:23,273 INFO Found element 40 at indices [(1, 2, 1), (2,)]
+2024-08-10 23:06:23,515 DEBUG Flattened data: [70, 40]
+2024-08-10 23:06:23,515 DEBUG Flattened data: [20, 30, 70, 40, 50]
+2024-08-10 23:06:23,515 DEBUG Flattened data: [10, 20, 30, 70, 40, 50, 40, 60]
+2024-08-10 23:06:23,515 INFO Count of element 60: 1
+2024-08-10 23:06:23,793 DEBUG Flattened data: [70, 40]
+2024-08-10 23:06:23,793 DEBUG Flattened data: [20, 30, 70, 40, 50]
+2024-08-10 23:06:23,794 DEBUG Flattened data: [10, 20, 30, 70, 40, 50, 40, 60]
+2024-08-10 23:06:23,794 INFO Count of element 40: 2
+2024-08-10 23:06:24,877 INFO Initialized with data: (10, (20, (30,), (70, 40), 50), 60)
+2024-08-10 23:06:25,107 DEBUG Flattened data: [30]
+2024-08-10 23:06:25,108 DEBUG Flattened data: [70, 40]
+2024-08-10 23:06:25,108 DEBUG Flattened data: [20, 30, 70, 40, 50]
+2024-08-10 23:06:25,108 DEBUG Flattened data: [10, 20, 30, 70, 40, 50, 60]
+2024-08-10 23:06:25,108 INFO Count of element 40: 1
+2024-08-10 23:06:25,377 INFO Found element 40 at indices [(1, 2, 1)]
+2024-08-10 23:06:25,948 DEBUG Flattened data: [30]
+2024-08-10 23:06:25,948 DEBUG Flattened data: [70, 40]
+2024-08-10 23:06:25,948 DEBUG Flattened data: [20, 30, 70, 40, 50]
+2024-08-10 23:06:25,948 DEBUG Flattened data: [10, 20, 30, 70, 40, 50, 60]
+2024-08-10 23:06:25,949 INFO Length of flattened tuple: 7
