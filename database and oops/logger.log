@@ -1,0 +1,26 @@
+2024-08-08 10:56:14,086 INFO List Initialized: [1, 2, 3, 4, 4, 5, 6, 7, -1]
+2024-08-08 10:56:18,265 INFO Search Operation.....
+2024-08-08 10:56:18,266 INFO Successful Search
+2024-08-08 10:56:43,978 INFO Search Operation.....
+2024-08-08 10:56:43,979 INFO Unsuccessful Search
+2024-08-08 11:00:18,813 INFO List Initialized: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+2024-08-08 11:00:32,072 INFO List Initialized: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+2024-08-08 11:00:34,750 INFO Search Operation.....
+2024-08-08 11:00:34,751 INFO Successful Search
+2024-08-08 11:00:38,575 INFO Search Operation.....
+2024-08-08 11:00:38,576 INFO Unsuccessful Search
+2024-08-08 11:05:35,669 INFO List Initialized: [1]
+2024-08-08 11:05:35,669 INFO Search Operation started...
+2024-08-08 11:05:35,669 INFO Unsuccessful Search: Target 4 not found.
+2024-08-08 11:05:51,557 INFO List Initialized: [1, 2, 3]
+2024-08-08 11:06:03,444 ERROR Invalid input for the list. Ensure you enter the correct number of integers.
+2024-08-08 11:06:03,444 ERROR Expected 2 numbers, but got 4.
+Traceback (most recent call last):
+  File "/tmp/ipykernel_8486/1977325211.py", line 28, in __init__
+    raise ValueError(f"Expected {size} numbers, but got {len(self.list_arr)}.")
+ValueError: Expected 2 numbers, but got 4.
+2024-08-08 11:06:07,763 INFO List Initialized: [1, 2]
+2024-08-08 11:06:29,171 INFO Search Operation started...
+2024-08-08 11:06:29,172 INFO Unsuccessful Search: Target 5 not found.
+2024-08-08 11:06:34,007 INFO Search Operation started...
+2024-08-08 11:06:34,007 INFO Successful Search: Found target 1 at index 0.

@@ -1,0 +1,324 @@
+2024-08-10 18:34:40,014 DEBUG diff parser start
+2024-08-10 18:34:40,014 DEBUG line_lengths old: 8; new: 1
+2024-08-10 18:34:40,015 DEBUG -> code[replace] old[1:8] new[1:1]
+2024-08-10 18:34:40,015 DEBUG parse_part from 1 to 1 (to 0 in part parser)
+2024-08-10 18:34:40,015 DEBUG diff parser end
+2024-08-10 18:35:09,869 INFO Initialized Tuple extractor with data: (10, 20, 30, 40, 50, 60)
+2024-08-10 18:35:13,526 DEBUG diff parser start
+2024-08-10 18:35:13,526 DEBUG line_lengths old: 1; new: 1
+2024-08-10 18:35:13,526 DEBUG -> code[replace] old[1:1] new[1:1]
+2024-08-10 18:35:13,527 DEBUG parse_part from 1 to 1 (to 0 in part parser)
+2024-08-10 18:35:13,527 DEBUG diff parser end
+2024-08-10 18:35:35,462 ERROR IndexError: Index 10 out of range. 
+2024-08-10 18:35:39,521 INFO Element at index 1: 20
+2024-08-10 18:35:47,251 INFO Slice from None to None: (10, 20, 30, 40, 50, 60)
+2024-08-10 18:35:55,640 INFO Slice from -3 to None: (40, 50, 60)
+2024-08-10 18:46:10,853 ERROR No such comm target registered: jupyter.widget.control
+2024-08-10 18:46:10,856 WARNING No such comm: dcd865b6-a0c2-458f-9075-a5a87c92dda2
+2024-08-10 18:46:10,856 DEBUG Current comms: []
+2024-08-10 18:57:40,687 INFO Initialized Tuple extractor with data: (10, 20, 30, 40, 50, 60)
+2024-08-10 18:57:44,550 INFO Element at index 1: 20
+2024-08-10 18:57:45,074 INFO Slice from -3 to None: (40, 50, 60)
+2024-08-10 18:57:58,558 ERROR IndexError: Index 10 out of range. 
+2024-08-10 18:58:22,377 INFO Initialized Tuple extractor with data: (10, 20, 30, 40, 50, 60)
+2024-08-10 18:58:22,702 INFO Element at index 1: 20
+2024-08-10 18:58:23,211 INFO Slice from -3 to None: (40, 50, 60)
+2024-08-10 18:58:38,616 INFO Initialized Tuple extractor with data: (10, 20, 30, 40, 50, 60)
+2024-08-10 18:58:38,849 INFO Element at index 1: 20
+2024-08-10 18:58:39,311 INFO Slice from -3 to None: (40, 50, 60)
+2024-08-10 18:59:18,715 INFO Initialized Tuple extractor with data: (10, 20, 30, 40, 50, 60)
+2024-08-10 18:59:18,919 INFO Element at index 1: 20
+2024-08-10 18:59:19,125 INFO Slice from -3 to None: (40, 50, 60)
+2024-08-10 19:00:23,166 INFO Initialized Tuple extractor with data: (10, 20, 30, 40, 50, 60)
+2024-08-10 19:00:23,547 INFO Element at index 1: 20
+2024-08-10 19:00:24,345 INFO Slice from -3 to None: (40, 50, 60)
+2024-08-10 19:00:59,953 INFO Initialized Tuple extractor with data: (10, 20, 30, 40, 50, 60)
+2024-08-10 19:01:00,161 INFO Element at index 1: 20
+2024-08-10 19:01:00,337 INFO Slice from -3 to None: (40, 50, 60)
+2024-08-10 19:01:01,230 INFO Found value 10 at index 0
+2024-08-10 19:01:13,028 WARNING Value 170 not found.
+2024-08-10 19:06:34,217 INFO Initialized Tuple extractor with data: (10, 20, (30, 40), 50, 60)
+2024-08-10 19:06:40,473 INFO Element at index 1: 20
+2024-08-10 19:06:41,003 INFO Slice from -3 to None: ((30, 40), 50, 60)
+2024-08-10 19:06:42,941 INFO Found value 10 at index 0
+2024-08-10 19:06:48,911 WARNING Value 40 not found.
+2024-08-10 19:06:54,333 WARNING Value 170 not found.
+2024-08-10 19:45:19,453 INFO Initialized Tuple extractor with data: (10, 20, (30, 40), 50, 60)
+2024-08-10 19:45:19,828 INFO Element at index 1: 20
+2024-08-10 19:45:20,362 INFO Slice from -3 to None: ((30, 40), 50, 60)
+2024-08-10 19:46:35,925 INFO Initialized Tuple extractor with data: (10, 20, (30, 40), 50, 60)
+2024-08-10 19:46:36,753 INFO Element at index 1: 20
+2024-08-10 19:46:37,159 INFO Slice from -3 to None: ((30, 40), 50, 60)
+2024-08-10 19:46:52,811 INFO Initialized Tuple extractor with data: (10, 20, (30, 40), 50, 60)
+2024-08-10 19:46:53,202 INFO Element at index 1: 20
+2024-08-10 19:46:53,937 INFO Slice from -3 to None: ((30, 40), 50, 60)
+2024-08-10 19:46:54,513 INFO Found value 40 at index (2, 1)
+2024-08-10 19:46:58,661 INFO Found value 40 at index (2, 1)
+2024-08-10 19:46:59,148 WARNING Value 170 not found.
+2024-08-10 19:47:14,809 INFO Found value 40 at index (2, 1)
+2024-08-10 19:47:36,146 INFO Initialized Tuple extractor with data: (10, 20, 30, 40, 50, 60)
+2024-08-10 19:47:36,692 INFO Found value 40 at index (3,)
+2024-08-10 19:48:39,404 INFO Initialized Tuple extractor with data: (10, (20, (30, 40), 50), 60)
+2024-08-10 19:48:42,539 DEBUG diff parser start
+2024-08-10 19:48:42,539 DEBUG line_lengths old: 1; new: 1
+2024-08-10 19:48:42,539 DEBUG -> code[replace] old[1:1] new[1:1]
+2024-08-10 19:48:42,540 DEBUG parse_part from 1 to 1 (to 0 in part parser)
+2024-08-10 19:48:42,540 DEBUG diff parser end
+2024-08-10 19:48:52,020 INFO Found value 40 at index (1, 1, 1)
+2024-08-10 19:49:05,800 INFO Initialized Tuple extractor with data: (10, (20, 30, 40, 50), 60)
+2024-08-10 19:49:06,347 INFO Found value 40 at index (1, 2)
+2024-08-10 19:49:17,813 INFO Initialized Tuple extractor with data: (10, (20, 30, (70, 40), 50), 60)
+2024-08-10 19:49:18,230 INFO Found value 40 at index (1, 2, 1)
+2024-08-10 20:06:22,786 INFO Length of tuple: 3
+2024-08-10 20:06:26,107 INFO Initialized Tuple extractor with data: (10, (20, 30, (70, 40), 50), 60)
+2024-08-10 20:06:26,588 INFO Found value 40 at index (1, 2, 1)
+2024-08-10 20:06:27,248 INFO Length of tuple: 3
+2024-08-10 20:06:44,073 INFO Initialized Tuple extractor with data: (10, 20, (30, 40), 50, 60)
+2024-08-10 20:06:44,312 INFO Element at index 1: 20
+2024-08-10 20:06:44,520 INFO Slice from -3 to None: ((30, 40), 50, 60)
+2024-08-10 20:06:44,748 INFO Found value 40 at index (2, 1)
+2024-08-10 20:06:45,600 WARNING Value 170 not found.
+2024-08-10 20:06:46,058 INFO Initialized Tuple extractor with data: (10, 20, 30, 40, 50, 60)
+2024-08-10 20:06:46,265 INFO Found value 40 at index (3,)
+2024-08-10 20:06:46,656 INFO Initialized Tuple extractor with data: (10, (20, 30, (70, 40), 50), 60)
+2024-08-10 20:06:46,860 INFO Found value 40 at index (1, 2, 1)
+2024-08-10 20:06:48,587 INFO Length of tuple: 3
+2024-08-10 20:06:59,796 INFO Value 40 occurs 0 time(s)
+2024-08-10 20:07:11,599 INFO Value 70 occurs 0 time(s)
+2024-08-10 20:07:18,528 INFO Value 60 occurs 1 time(s)
+2024-08-10 20:10:38,133 INFO Initialized Tuple extractor with data: (10, 20, (30, 40), 50, 60)
+2024-08-10 20:10:38,383 INFO Element at index 1: 20
+2024-08-10 20:10:38,564 INFO Slice from -3 to None: ((30, 40), 50, 60)
+2024-08-10 20:10:39,473 INFO Found value 40 at index (2, 1)
+2024-08-10 20:10:40,011 WARNING Value 170 not found.
+2024-08-10 20:10:41,303 INFO Initialized Tuple extractor with data: (10, 20, 30, 40, 50, 60)
+2024-08-10 20:10:41,504 INFO Found value 40 at index (3,)
+2024-08-10 20:10:42,261 INFO Initialized Tuple extractor with data: (10, (20, 30, (70, 40), 50), 60)
+2024-08-10 20:10:43,195 INFO Found value 40 at index (1, 2, 1)
+2024-08-10 20:11:10,767 INFO Initialized Tuple extractor with data: (10, 20, (30, 40), 50, 60)
+2024-08-10 20:11:10,827 INFO Element at index 1: 20
+2024-08-10 20:11:10,916 INFO Slice from -3 to None: ((30, 40), 50, 60)
+2024-08-10 20:11:10,982 INFO Found value 40 at index (2, 1)
+2024-08-10 20:11:11,044 WARNING Value 170 not found.
+2024-08-10 20:11:11,422 INFO Initialized Tuple extractor with data: (10, 20, 30, 40, 50, 60)
+2024-08-10 20:11:12,600 INFO Found value 40 at index (3,)
+2024-08-10 20:11:13,336 INFO Initialized Tuple extractor with data: (10, (20, 30, (70, 40), 50), 60)
+2024-08-10 20:11:13,913 INFO Found value 40 at index (1, 2, 1)
+2024-08-10 20:12:52,159 INFO Initialized Tuple extractor with data: (10, 20, (30, 40), 50, 60)
+2024-08-10 20:12:52,388 INFO Element at index 1: 20
+2024-08-10 20:12:52,615 INFO Slice from -3 to None: ((30, 40), 50, 60)
+2024-08-10 20:12:52,873 INFO Found value 40 at index (2, 1)
+2024-08-10 20:12:53,092 WARNING Value 170 not found.
+2024-08-10 20:12:55,025 INFO Initialized Tuple extractor with data: (10, 20, 30, 40, 50, 60)
+2024-08-10 20:12:55,768 INFO Found value 40 at index (3,)
+2024-08-10 20:12:57,347 INFO Initialized Tuple extractor with data: (10, (20, 30, (70, 40), 50), 60)
+2024-08-10 20:12:57,905 INFO Found value 40 at index (1, 2, 1)
+2024-08-10 20:13:05,198 INFO Initialized Tuple extractor with data: (10, 20, (30, 40), 50, 60)
+2024-08-10 20:13:05,445 INFO Element at index 1: 20
+2024-08-10 20:13:05,679 INFO Slice from -3 to None: ((30, 40), 50, 60)
+2024-08-10 20:13:05,876 INFO Found value 40 at index (2, 1)
+2024-08-10 20:13:06,377 WARNING Value 170 not found.
+2024-08-10 20:13:06,506 INFO Initialized Tuple extractor with data: (10, 20, 30, 40, 50, 60)
+2024-08-10 20:13:06,568 INFO Found value 40 at index (3,)
+2024-08-10 20:13:06,726 INFO Initialized Tuple extractor with data: (10, (20, 30, (70, 40), 50), 60)
+2024-08-10 20:13:06,792 INFO Found value 40 at index (1, 2, 1)
+2024-08-10 20:42:34,740 INFO Initialized with data: (10, 20, (30, 40), 50, 60)
+2024-08-10 20:42:35,084 DEBUG Flattened data: [30, 40]
+2024-08-10 20:42:35,084 DEBUG Flattened data: [10, 20, 30, 40, 50, 60]
+2024-08-10 20:42:35,084 INFO Retrieved element at index 1: 20
+2024-08-10 20:42:35,620 DEBUG Flattened data: [30, 40]
+2024-08-10 20:42:35,620 DEBUG Flattened data: [10, 20, 30, 40, 50, 60]
+2024-08-10 20:42:35,621 INFO Retrieved slice from index -3 to None: [40, 50, 60]
+2024-08-10 20:42:37,266 DEBUG Flattened data: [30, 40]
+2024-08-10 20:42:37,266 DEBUG Flattened data: [10, 20, 30, 40, 50, 60]
+2024-08-10 20:42:37,266 INFO Found element 40 at index 3
+2024-08-10 20:42:37,727 DEBUG Flattened data: [30, 40]
+2024-08-10 20:42:37,727 DEBUG Flattened data: [10, 20, 30, 40, 50, 60]
+2024-08-10 20:42:37,727 WARNING Element 170 not found.
+2024-08-10 20:42:39,046 INFO Initialized with data: (10, 20, 30, 40, 50, 60)
+2024-08-10 20:42:39,563 DEBUG Flattened data: [10, 20, 30, 40, 50, 60]
+2024-08-10 20:42:39,563 INFO Found element 40 at index 3
+2024-08-10 20:42:41,740 INFO Initialized with data: (10, (20, 30, (70, 40), 50), 60)
+2024-08-10 20:42:42,554 DEBUG Flattened data: [70, 40]
+2024-08-10 20:42:42,555 DEBUG Flattened data: [20, 30, 70, 40, 50]
+2024-08-10 20:42:42,555 DEBUG Flattened data: [10, 20, 30, 70, 40, 50, 60]
+2024-08-10 20:42:42,555 INFO Found element 40 at index 4
+2024-08-10 20:47:40,459 DEBUG Flattened data: [70, 40]
+2024-08-10 20:47:40,459 DEBUG Flattened data: [20, 30, 70, 40, 50]
+2024-08-10 20:47:40,459 DEBUG Flattened data: [10, 20, 30, 70, 40, 50, 60]
+2024-08-10 20:47:40,459 INFO Count of element 60: 1
+2024-08-10 20:47:45,171 DEBUG Flattened data: [70, 40]
+2024-08-10 20:47:45,172 DEBUG Flattened data: [20, 30, 70, 40, 50]
+2024-08-10 20:47:45,172 DEBUG Flattened data: [10, 20, 30, 70, 40, 50, 60]
+2024-08-10 20:47:45,172 INFO Found element 40 at index 4
+2024-08-10 20:47:47,859 DEBUG Flattened data: [70, 40]
+2024-08-10 20:47:47,860 DEBUG Flattened data: [20, 30, 70, 40, 50]
+2024-08-10 20:47:47,860 DEBUG Flattened data: [10, 20, 30, 70, 40, 50, 60]
+2024-08-10 20:47:47,860 INFO Count of element 60: 1
+2024-08-10 20:48:20,418 INFO Initialized with data: (10, (20, 30, (70, 40), 50), 60)
+2024-08-10 20:48:28,534 INFO Initialized with data: (10, (20, (30,), (70, 40), 50), 40, 60)
+2024-08-10 20:48:38,251 DEBUG diff parser start
+2024-08-10 20:48:38,252 DEBUG line_lengths old: 1; new: 1
+2024-08-10 20:48:38,252 DEBUG -> code[replace] old[1:1] new[1:1]
+2024-08-10 20:48:38,253 DEBUG parse_part from 1 to 1 (to 0 in part parser)
+2024-08-10 20:48:38,253 DEBUG diff parser end
+2024-08-10 20:48:43,307 DEBUG Flattened data: [30]
+2024-08-10 20:48:43,307 DEBUG Flattened data: [70, 40]
+2024-08-10 20:48:43,307 DEBUG Flattened data: [20, 30, 70, 40, 50]
+2024-08-10 20:48:43,308 DEBUG Flattened data: [10, 20, 30, 70, 40, 50, 40, 60]
+2024-08-10 20:48:43,308 INFO Count of element 40: 2
+2024-08-10 20:49:10,998 DEBUG Flattened data: [30]
+2024-08-10 20:49:10,999 DEBUG Flattened data: [70, 40]
+2024-08-10 20:49:10,999 DEBUG Flattened data: [20, 30, 70, 40, 50]
+2024-08-10 20:49:10,999 DEBUG Flattened data: [10, 20, 30, 70, 40, 50, 40, 60]
+2024-08-10 20:49:10,999 INFO Found element 40 at index 4
+2024-08-10 20:49:25,420 INFO Initialized with data: (10, (20, (30,), (70, 40), 50), 60)
+2024-08-10 20:49:25,816 DEBUG Flattened data: [30]
+2024-08-10 20:49:25,817 DEBUG Flattened data: [70, 40]
+2024-08-10 20:49:25,817 DEBUG Flattened data: [20, 30, 70, 40, 50]
+2024-08-10 20:49:25,817 DEBUG Flattened data: [10, 20, 30, 70, 40, 50, 60]
+2024-08-10 20:49:25,817 INFO Count of element 40: 1
+2024-08-10 20:49:26,358 DEBUG Flattened data: [30]
+2024-08-10 20:49:26,359 DEBUG Flattened data: [70, 40]
+2024-08-10 20:49:26,359 DEBUG Flattened data: [20, 30, 70, 40, 50]
+2024-08-10 20:49:26,359 DEBUG Flattened data: [10, 20, 30, 70, 40, 50, 60]
+2024-08-10 20:49:26,359 INFO Found element 40 at index 4
+2024-08-10 20:52:07,660 INFO Initialized with data: (10, 20, (30, 40), 50, 60)
+2024-08-10 20:52:08,189 DEBUG Flattened data: [30, 40]
+2024-08-10 20:52:08,190 DEBUG Flattened data: [10, 20, 30, 40, 50, 60]
+2024-08-10 20:52:08,190 INFO Retrieved element at index 1: 20
+2024-08-10 20:52:09,518 DEBUG Flattened data: [30, 40]
+2024-08-10 20:52:09,519 DEBUG Flattened data: [10, 20, 30, 40, 50, 60]
+2024-08-10 20:52:09,519 INFO Retrieved slice from index -3 to None: [40, 50, 60]
+2024-08-10 20:52:43,259 INFO Initialized with data: (10, 20, (30, 40), 50, 60)
+2024-08-10 20:52:43,671 DEBUG Flattened data: [30, 40]
+2024-08-10 20:52:43,672 DEBUG Flattened data: [10, 20, 30, 40, 50, 60]
+2024-08-10 20:52:43,672 INFO Retrieved element at index 1: 20
+2024-08-10 20:52:44,082 DEBUG Flattened data: [30, 40]
+2024-08-10 20:52:44,083 DEBUG Flattened data: [10, 20, 30, 40, 50, 60]
+2024-08-10 20:52:44,083 INFO Retrieved slice from index -3 to None: [40, 50, 60]
+2024-08-10 20:53:30,348 INFO Initialized with data: (10, 20, (30, 40), 50, 60)
+2024-08-10 20:53:30,788 DEBUG Flattened data: [30, 40]
+2024-08-10 20:53:30,789 DEBUG Flattened data: [10, 20, 30, 40, 50, 60]
+2024-08-10 20:53:30,789 INFO Retrieved element at index 1: 20
+2024-08-10 20:53:31,354 DEBUG Flattened data: [30, 40]
+2024-08-10 20:53:31,355 DEBUG Flattened data: [10, 20, 30, 40, 50, 60]
+2024-08-10 20:53:31,355 INFO Retrieved slice from index -3 to None: [40, 50, 60]
+2024-08-10 20:53:56,000 INFO Initialized with data: (10, 20, (30, 40), 50, 60)
+2024-08-10 20:53:56,301 DEBUG Flattened data: [30, 40]
+2024-08-10 20:53:56,302 DEBUG Flattened data: [10, 20, 30, 40, 50, 60]
+2024-08-10 20:53:56,302 INFO Retrieved element at index 1: 20
+2024-08-10 20:53:56,775 DEBUG Flattened data: [30, 40]
+2024-08-10 20:53:56,776 DEBUG Flattened data: [10, 20, 30, 40, 50, 60]
+2024-08-10 20:53:56,776 INFO Retrieved slice from index -3 to None: [40, 50, 60]
+2024-08-10 20:53:57,265 INFO Found element 40 at indices [(2, 1)]
+2024-08-10 20:54:00,214 INFO Found element 40 at indices [(2, 1)]
+2024-08-10 20:54:00,726 WARNING Element 170 not found.
+2024-08-10 20:54:09,540 DEBUG Flattened data: [30, 40]
+2024-08-10 20:54:09,540 DEBUG Flattened data: [10, 20, 30, 40, 50, 60]
+2024-08-10 20:54:09,540 INFO Retrieved slice from index -3 to None: [40, 50, 60]
+2024-08-10 20:54:09,793 INFO Found element 40 at indices [(2, 1)]
+2024-08-10 20:54:10,081 WARNING Element 170 not found.
+2024-08-10 20:54:11,026 INFO Initialized with data: (10, 20, 30, 40, 50, 60)
+2024-08-10 20:54:11,618 INFO Found element 40 at indices [(3,)]
+2024-08-10 20:54:13,533 INFO Initialized with data: (10, (20, 30, (70, 40), 50), 60)
+2024-08-10 20:54:14,141 INFO Found element 40 at indices [(1, 2, 1)]
+2024-08-10 20:54:14,797 DEBUG Flattened data: [70, 40]
+2024-08-10 20:54:14,798 DEBUG Flattened data: [20, 30, 70, 40, 50]
+2024-08-10 20:54:14,798 DEBUG Flattened data: [10, 20, 30, 70, 40, 50, 60]
+2024-08-10 20:54:14,798 INFO Count of element 60: 1
+2024-08-10 20:54:15,950 INFO Initialized with data: (10, (20, (30,), (70, 40), 50), 60)
+2024-08-10 20:54:16,969 DEBUG Flattened data: [30]
+2024-08-10 20:54:16,969 DEBUG Flattened data: [70, 40]
+2024-08-10 20:54:16,969 DEBUG Flattened data: [20, 30, 70, 40, 50]
+2024-08-10 20:54:16,969 DEBUG Flattened data: [10, 20, 30, 70, 40, 50, 60]
+2024-08-10 20:54:16,969 INFO Count of element 40: 1
+2024-08-10 20:54:18,053 INFO Found element 40 at indices [(1, 2, 1)]
+2024-08-10 20:55:39,370 INFO Initialized with data: (10, (20, 30, (70, 40), 50), 40, 60)
+2024-08-10 20:55:39,782 INFO Found element 40 at indices [(1, 2, 1), (2,)]
+2024-08-10 20:55:40,428 DEBUG Flattened data: [70, 40]
+2024-08-10 20:55:40,429 DEBUG Flattened data: [20, 30, 70, 40, 50]
+2024-08-10 20:55:40,429 DEBUG Flattened data: [10, 20, 30, 70, 40, 50, 40, 60]
+2024-08-10 20:55:40,429 INFO Count of element 60: 1
+2024-08-10 20:55:41,570 DEBUG Flattened data: [70, 40]
+2024-08-10 20:55:41,570 DEBUG Flattened data: [20, 30, 70, 40, 50]
+2024-08-10 20:55:41,570 DEBUG Flattened data: [10, 20, 30, 70, 40, 50, 40, 60]
+2024-08-10 20:55:41,571 INFO Count of element 40: 2
+2024-08-10 20:55:44,144 INFO Initialized with data: (10, (20, (30,), (70, 40), 50), 60)
+2024-08-10 20:55:45,109 DEBUG Flattened data: [30]
+2024-08-10 20:55:45,109 DEBUG Flattened data: [70, 40]
+2024-08-10 20:55:45,109 DEBUG Flattened data: [20, 30, 70, 40, 50]
+2024-08-10 20:55:45,109 DEBUG Flattened data: [10, 20, 30, 70, 40, 50, 60]
+2024-08-10 20:55:45,109 INFO Count of element 40: 1
+2024-08-10 20:55:45,847 INFO Found element 40 at indices [(1, 2, 1)]
+2024-08-10 20:55:50,871 DEBUG Flattened data: [30]
+2024-08-10 20:55:50,872 DEBUG Flattened data: [70, 40]
+2024-08-10 20:55:50,872 DEBUG Flattened data: [20, 30, 70, 40, 50]
+2024-08-10 20:55:50,872 DEBUG Flattened data: [10, 20, 30, 70, 40, 50, 60]
+2024-08-10 20:55:50,872 INFO Length of flattened tuple: 7
+2024-08-10 21:09:54,460 INFO Initialized with data: (10, 20, (30, 40), 50, 60)
+2024-08-10 21:09:54,988 DEBUG Flattened data: [30, 40]
+2024-08-10 21:09:54,989 DEBUG Flattened data: [10, 20, 30, 40, 50, 60]
+2024-08-10 21:09:54,989 INFO Retrieved element at index 1: 20
+2024-08-10 21:09:55,621 DEBUG Flattened data: [30, 40]
+2024-08-10 21:09:55,622 DEBUG Flattened data: [10, 20, 30, 40, 50, 60]
+2024-08-10 21:09:55,622 INFO Retrieved slice from index -3 to None: [40, 50, 60]
+2024-08-10 21:09:56,338 INFO Found element 40 at indices [(2, 1)]
+2024-08-10 21:09:57,253 WARNING Element 170 not found.
+2024-08-10 21:09:58,359 INFO Initialized with data: (10, 20, 30, 40, 50, 60)
+2024-08-10 21:09:59,308 INFO Found element 40 at indices [(3,)]
+2024-08-10 21:10:00,210 INFO Initialized with data: (10, (20, 30, (70, 40), 50), 40, 60)
+2024-08-10 21:10:00,648 INFO Found element 40 at indices [(1, 2, 1), (2,)]
+2024-08-10 21:10:01,727 DEBUG Flattened data: [70, 40]
+2024-08-10 21:10:01,727 DEBUG Flattened data: [20, 30, 70, 40, 50]
+2024-08-10 21:10:01,728 DEBUG Flattened data: [10, 20, 30, 70, 40, 50, 40, 60]
+2024-08-10 21:10:01,728 INFO Count of element 60: 1
+2024-08-10 21:10:02,147 DEBUG Flattened data: [70, 40]
+2024-08-10 21:10:02,148 DEBUG Flattened data: [20, 30, 70, 40, 50]
+2024-08-10 21:10:02,148 DEBUG Flattened data: [10, 20, 30, 70, 40, 50, 40, 60]
+2024-08-10 21:10:02,148 INFO Count of element 40: 2
+2024-08-10 21:10:03,409 INFO Initialized with data: (10, (20, (30,), (70, 40), 50), 60)
+2024-08-10 21:10:04,389 DEBUG Flattened data: [30]
+2024-08-10 21:10:04,389 DEBUG Flattened data: [70, 40]
+2024-08-10 21:10:04,389 DEBUG Flattened data: [20, 30, 70, 40, 50]
+2024-08-10 21:10:04,390 DEBUG Flattened data: [10, 20, 30, 70, 40, 50, 60]
+2024-08-10 21:10:04,390 INFO Count of element 40: 1
+2024-08-10 21:10:04,767 INFO Found element 40 at indices [(1, 2, 1)]
+2024-08-10 21:10:05,386 DEBUG Flattened data: [30]
+2024-08-10 21:10:05,387 DEBUG Flattened data: [70, 40]
+2024-08-10 21:10:05,387 DEBUG Flattened data: [20, 30, 70, 40, 50]
+2024-08-10 21:10:05,387 DEBUG Flattened data: [10, 20, 30, 70, 40, 50, 60]
+2024-08-10 21:10:05,387 INFO Length of flattened tuple: 7
+2024-08-10 21:10:49,469 INFO Initialized with data: (10, 20, (30, 40), 50, 60)
+2024-08-10 21:10:49,825 DEBUG Flattened data: [30, 40]
+2024-08-10 21:10:49,825 DEBUG Flattened data: [10, 20, 30, 40, 50, 60]
+2024-08-10 21:10:49,826 INFO Retrieved element at index 1: 20
+2024-08-10 21:10:50,250 DEBUG Flattened data: [30, 40]
+2024-08-10 21:10:50,250 DEBUG Flattened data: [10, 20, 30, 40, 50, 60]
+2024-08-10 21:10:50,250 INFO Retrieved slice from index -3 to None: [40, 50, 60]
+2024-08-10 21:10:50,656 INFO Found element 40 at indices [(2, 1)]
+2024-08-10 21:10:51,082 WARNING Element 170 not found.
+2024-08-10 21:10:52,309 INFO Initialized with data: (10, 20, 30, 40, 50, 60)
+2024-08-10 21:10:52,560 INFO Found element 40 at indices [(3,)]
+2024-08-10 21:10:53,234 INFO Initialized with data: (10, (20, 30, (70, 40), 50), 40, 60)
+2024-08-10 21:10:53,443 INFO Found element 40 at indices [(1, 2, 1), (2,)]
+2024-08-10 21:10:53,654 DEBUG Flattened data: [70, 40]
+2024-08-10 21:10:53,655 DEBUG Flattened data: [20, 30, 70, 40, 50]
+2024-08-10 21:10:53,655 DEBUG Flattened data: [10, 20, 30, 70, 40, 50, 40, 60]
+2024-08-10 21:10:53,655 INFO Count of element 60: 1
+2024-08-10 21:10:54,339 DEBUG Flattened data: [70, 40]
+2024-08-10 21:10:54,340 DEBUG Flattened data: [20, 30, 70, 40, 50]
+2024-08-10 21:10:54,340 DEBUG Flattened data: [10, 20, 30, 70, 40, 50, 40, 60]
+2024-08-10 21:10:54,340 INFO Count of element 40: 2
+2024-08-10 21:10:55,614 INFO Initialized with data: (10, (20, (30,), (70, 40), 50), 60)
+2024-08-10 21:10:55,830 DEBUG Flattened data: [30]
+2024-08-10 21:10:55,831 DEBUG Flattened data: [70, 40]
+2024-08-10 21:10:55,831 DEBUG Flattened data: [20, 30, 70, 40, 50]
+2024-08-10 21:10:55,831 DEBUG Flattened data: [10, 20, 30, 70, 40, 50, 60]
+2024-08-10 21:10:55,831 INFO Count of element 40: 1
+2024-08-10 21:10:56,275 INFO Found element 40 at indices [(1, 2, 1)]
+2024-08-10 21:10:57,104 DEBUG Flattened data: [30]
+2024-08-10 21:10:57,105 DEBUG Flattened data: [70, 40]
+2024-08-10 21:10:57,105 DEBUG Flattened data: [20, 30, 70, 40, 50]
+2024-08-10 21:10:57,105 DEBUG Flattened data: [10, 20, 30, 70, 40, 50, 60]
+2024-08-10 21:10:57,105 INFO Length of flattened tuple: 7
