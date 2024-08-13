@@ -1,0 +1,59 @@
+2024-08-12 19:26:51,616 - __main__ - ERROR - An error occurred while connecting to MongoDB: bad auth : Authentication failed., full error: {'ok': 0, 'errmsg': 'bad auth : Authentication failed.', 'code': 8000, 'codeName': 'AtlasError'}
+2024-08-12 19:26:51,618 - __main__ - WARNING - MongoDB collection is not initialized.
+2024-08-12 19:26:51,621 - __main__ - WARNING - MongoDB collection is not initialized.
+2024-08-12 19:26:51,622 - __main__ - WARNING - MongoDB collection is not initialized.
+2024-08-12 19:26:51,624 - __main__ - WARNING - MongoDB client was not initialized.
+2024-08-12 20:27:31,524 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2024-08-12 20:27:33,388 - __main__ - INFO - Pinged your deployment. You successfully connected to MongoDB!
+2024-08-12 20:28:35,853 - __main__ - INFO - Pinged your deployment. You successfully connected to MongoDB!
+2024-08-12 20:29:07,184 - __main__ - INFO - Pinged your deployment. You successfully connected to MongoDB!
+2024-08-12 20:34:24,823 - __main__ - INFO - Pinged your deployment. You successfully connected to MongoDB!
+2024-08-12 20:39:58,079 - __main__ - INFO - Pinged your deployment. You successfully connected to MongoDB!
+2024-08-12 20:39:58,110 - __main__ - INFO - Database 'ineuron' exists.
+2024-08-12 20:42:05,883 - __main__ - INFO - Pinged your deployment. You successfully connected to MongoDB!
+2024-08-12 20:42:05,911 - __main__ - INFO - Database 'ineuron' exists.
+2024-08-12 20:43:00,662 - __main__ - INFO - Pinged your deployment. You successfully connected to MongoDB!
+2024-08-12 20:43:00,691 - __main__ - INFO - Database 'ineuron' exists.
+2024-08-12 20:43:00,716 - __main__ - INFO - Collection 'course' exists.
+2024-08-12 20:43:20,574 - __main__ - INFO - Pinged your deployment. You successfully connected to MongoDB!
+2024-08-12 20:43:20,602 - __main__ - INFO - Database 'juptyer' does not exist yet. It will be created automatically upon the first write operation.
+2024-08-12 20:43:20,626 - __main__ - INFO - Collection 'ineuron' does not exist yet. It will be created automatically upon the first write operation.
+2024-08-12 21:19:15,833 - __main__ - ERROR - An error occurred while connecting to MongoDB: bad auth : Authentication failed., full error: {'ok': 0, 'errmsg': 'bad auth : Authentication failed.', 'code': 8000, 'codeName': 'AtlasError'}
+2024-08-12 21:19:15,833 - __main__ - WARNING - MongoDB collection is not initialized.
+2024-08-12 21:19:15,838 - __main__ - WARNING - MongoDB collection is not initialized.
+2024-08-12 21:19:15,838 - __main__ - WARNING - MongoDB collection is not initialized.
+2024-08-12 21:19:15,843 - __main__ - WARNING - MongoDB client was not initialized.
+2024-08-12 21:19:16,620 - __main__ - INFO - Pinged your deployment. You successfully connected to MongoDB!
+2024-08-12 21:19:16,654 - __main__ - INFO - Database 'juptyer' does not exist yet. It will be created automatically upon the first write operation.
+2024-08-12 21:19:16,676 - __main__ - INFO - Collection 'ineuron' does not exist yet. It will be created automatically upon the first write operation.
+2024-08-12 21:19:34,756 - __main__ - ERROR - An error occurred while connecting to MongoDB: bad auth : Authentication failed., full error: {'ok': 0, 'errmsg': 'bad auth : Authentication failed.', 'code': 8000, 'codeName': 'AtlasError'}
+2024-08-12 21:19:34,756 - __main__ - WARNING - MongoDB collection is not initialized.
+2024-08-12 21:19:34,756 - __main__ - WARNING - MongoDB collection is not initialized.
+2024-08-12 21:19:34,761 - __main__ - WARNING - MongoDB collection is not initialized.
+2024-08-12 21:19:34,761 - __main__ - WARNING - MongoDB client was not initialized.
+2024-08-12 21:19:53,405 - __main__ - ERROR - An error occurred while connecting to MongoDB: bad auth : Authentication failed., full error: {'ok': 0, 'errmsg': 'bad auth : Authentication failed.', 'code': 8000, 'codeName': 'AtlasError'}
+2024-08-12 21:19:53,407 - __main__ - WARNING - MongoDB collection is not initialized.
+2024-08-12 21:19:53,409 - __main__ - WARNING - MongoDB collection is not initialized.
+2024-08-12 21:19:53,412 - __main__ - WARNING - MongoDB collection is not initialized.
+2024-08-12 21:19:53,412 - __main__ - WARNING - MongoDB client was not initialized.
+2024-08-12 21:19:54,032 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2024-08-12 21:20:11,060 - __main__ - INFO - Pinged your deployment. You successfully connected to MongoDB!
+2024-08-12 21:20:11,087 - __main__ - INFO - Database 'juptyer' does not exist yet. It will be created automatically upon the first write operation.
+2024-08-12 21:20:11,109 - __main__ - INFO - Collection 'ineuron' does not exist yet. It will be created automatically upon the first write operation.
+2024-08-12 21:20:20,884 - __main__ - INFO - Document inserted with _id: 66ba2f3cfbb5e61dda4941bd
+2024-08-12 21:21:13,222 - __main__ - INFO - Number of documents updated: 1
+2024-08-12 21:21:49,164 - __main__ - INFO - Number of documents deleted: 1
+2024-08-12 21:21:58,501 - __main__ - INFO - MongoDB connection closed.
+2024-08-12 21:26:59,494 - __main__ - ERROR - An error occurred while connecting to MongoDB: bad auth : Authentication failed., full error: {'ok': 0, 'errmsg': 'bad auth : Authentication failed.', 'code': 8000, 'codeName': 'AtlasError'}
+2024-08-12 21:26:59,494 - __main__ - WARNING - MongoDB collection is not initialized.
+2024-08-12 21:26:59,494 - __main__ - WARNING - MongoDB collection is not initialized.
+2024-08-12 21:26:59,499 - __main__ - WARNING - MongoDB collection is not initialized.
+2024-08-12 21:26:59,499 - __main__ - WARNING - MongoDB client was not initialized.
+2024-08-12 21:28:23,021 - __main__ - INFO - Pinged your deployment. You successfully connected to MongoDB!
+2024-08-12 21:28:23,056 - __main__ - INFO - Database 'juptyer' exists.
+2024-08-12 21:28:23,085 - __main__ - INFO - Collection 'ineuron' exists.
+2024-08-12 21:28:27,054 - __main__ - INFO - Document inserted with _id: 66ba3123fbb5e61dda4941c0
+2024-08-12 21:28:29,569 - __main__ - INFO - Number of documents updated: 1
+2024-08-12 21:28:30,775 - __main__ - INFO - Number of documents deleted: 1
+2024-08-12 21:28:50,748 - __main__ - INFO - Documents inserted with ids: [ObjectId('66ba313afbb5e61dda4941c1'), ObjectId('66ba313afbb5e61dda4941c2'), ObjectId('66ba313afbb5e61dda4941c3'), ObjectId('66ba313afbb5e61dda4941c4'), ObjectId('66ba313afbb5e61dda4941c5'), ObjectId('66ba313afbb5e61dda4941c6'), ObjectId('66ba313afbb5e61dda4941c7'), ObjectId('66ba313afbb5e61dda4941c8'), ObjectId('66ba313afbb5e61dda4941c9'), ObjectId('66ba313afbb5e61dda4941ca'), ObjectId('66ba313afbb5e61dda4941cb'), ObjectId('66ba313afbb5e61dda4941cc')]
+2024-08-12 21:50:20,521 - __main__ - INFO - MongoDB connection closed.
