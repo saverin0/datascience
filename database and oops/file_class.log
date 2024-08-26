@@ -1,0 +1,8 @@
+2024-08-10 23:04:50,180 INFO This is a start of read operation 
+2024-08-10 23:04:50,180 INFO i am inside try block of read method 
+2024-08-10 23:04:50,181 INFO I am able to read the file
+2024-08-10 23:04:50,390 INFO i am inside a try to write fun
+2024-08-10 23:04:50,391 INFO i am able to write a data into file succesfully
+2024-08-10 23:04:50,639 INFO This is a start of read operation 
+2024-08-10 23:04:50,639 INFO i am inside try block of read method 
+2024-08-10 23:04:50,640 INFO I am able to read the file
