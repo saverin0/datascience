@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "d588d4d1-fe83-41d8-8647-42cfab2aa6da",
+		"name": "Flask postman collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38225877"
+	},
+	"item": [
+		{
+			"name": "https://salmon-artist-uoywv.pwskills.app:5000/demo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"operation\":\"division\",\r\n    \"num1\":100,\r\n    \"num2\":24\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://salmon-artist-uoywv.pwskills.app:5000/demo",
+					"protocol": "https",
+					"host": [
+						"salmon-artist-uoywv",
+						"pwskills",
+						"app"
+					],
+					"port": "5000",
+					"path": [
+						"demo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://salmon-artist-uoywv.pwskills.app:5000/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"operation\":\"add\",\r\n    \"num1\":\"23\",\r\n    \"num2\":\"24\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://salmon-artist-uoywv.pwskills.app:5000/add",
+					"protocol": "https",
+					"host": [
+						"salmon-artist-uoywv",
+						"pwskills",
+						"app"
+					],
+					"port": "5000",
+					"path": [
+						"add"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
