@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airfoil Prediction Tool</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    :root {
+    --primary: #3a86ff;
+    --primary-dark: #2667cc;
+    --secondary: #8338ec;
+    --light: #f8f9fa;
+    --dark: #212529;
+    --success: #38b000;
+    --error: #e63946;
+    --border-radius: 12px;
+    --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+    }
+    
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: var(--dark);
+    }
+    
+    .container {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    position: relative;
+    }
+    
+    .header {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    padding: 2.5rem 2rem;
+    text-align: center;
+    color: white;
+    }
+    
+    .header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.5px;
+    }
+    
+    .header p {
+    font-weight: 300;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+    }
+    
+    .form-container {
+    padding: 2.5rem;
+    }
+    
+    .form-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+    }
+    
+    .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    }
+    
+    .input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    }
+    
+    .form-group input {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    border: 2px solid #e9ecef;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    font-family: inherit;
+    transition: var(--transition);
+    padding-right: 3rem; /* Make room for the unit */
+    }
+    
+    .form-group input::placeholder {
+    color: #adb5bd; /* Lighter placeholder text */
+    font-weight: 400;
+    }
+    
+    .form-group input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(58, 134, 255, 0.1);
+    }
+    
+    .form-group .unit {
+    position: absolute;
+    right: 1.2rem;
+    color: #212529; /* Changed to black */
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    }
+    
+    /* Tooltip for degree symbol */
+    .form-group .unit.degree-unit {
+    position: relative;
+    }
+    
+    .form-group .unit.degree-unit:hover::after {
+    content: "degree";
+    position: absolute;
+    top: 50%;
+    right: -50px;
+    transform: translateY(-50%);
+    background: white;
+    color: black;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-size: 0.65rem;
+    font-family: 'Poppins', sans-serif; /* Match body font */
+    white-space: nowrap;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dee2e6;
+    z-index: 10;
+    }
+    
+    .form-row {
+    display: flex;
+    gap: 1.5rem;
+    }
+    
+    .form-row .form-group {
+    flex: 1;
+    }
+    
+    .btn {
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: var(--border-radius);
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    }
+    
+    .btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .btn i {
+    margin-right: 0.5rem;
+    }
+    
+    .result {
+    padding: 2rem;
+    background: var(--light);
+    border-top: 1px solid #e9ecef;
+    text-align: center;
+    }
+    
+    .result.active {
+    display: block;
+    }
+    
+    .result h2 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--primary);
+    }
+    
+    .result-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--dark);
+    }
+    
+    .tooltip {
+    display: inline-block;
+    margin-left: 0.3rem;
+    color: #6c757d;
+    cursor: pointer;
+    position: relative;
+    }
+    
+    .tooltip:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: -30px; /* Moved higher to avoid covering headings */
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    color: black;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-size: 0.65rem;
+    font-family: 'Poppins', sans-serif; /* Match body font */
+    white-space: nowrap;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dee2e6;
+    z-index: 10;
+    }
+    
+    .tooltip:hover::before {
+    content: '';
+    position: absolute;
+    top: -7px; /* Adjusted to match the new tooltip position */
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: #dee2e6;
+    z-index: 10;
+    }
+    
+    /* New styles for input summary and error message */
+    .input-summary {
+    margin-top: 2rem;
+    text-align: left;
+    background: white;
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    }
+
+    .input-summary h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+    }
+
+    .params-list {
+    list-style: none;
+    }
+
+    .params-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e9ecef;
+    }
+
+    .params-list li:last-child {
+    border-bottom: none;
+    }
+    
+    /* Improved degree symbol in results */
+    .degree-symbol {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 2px;
+    }
+
+    .error-message {
+    padding: 2rem;
+    background: rgba(230, 57, 70, 0.1);
+    border-top: 1px solid var(--error);
+    text-align: center;
+    color: var(--error);
+    }
+    
+    @media (max-width: 768px) {
+    .form-row {
+    flex-direction: column;
+    gap: 0;
+    }
+    
+    .header h1 {
+    font-size: 2rem;
+    }
+    
+    .form-container {
+    padding: 1.5rem;
+    }
+    }
+    
+    /* Animation */
+    @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .container {
+    animation: fadeIn 0.6s ease-out;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Body content remains the same -->
+  <div class="container">
+    <div class="header">
+    <h1>Airfoil Prediction</h1>
+    <p>Enter the parameters below to predict the scaled sound pressure level for airfoil sections</p>
+    </div>
+    
+    <div class="form-container">
+    <form action="{{ url_for('predict') }}" method="post">
+    <div class="form-row">
+    <div class="form-group">
+    <label for="frequency">Frequency <i class="tooltip fas fa-info-circle" data-tooltip="Frequency in Hz"></i></label>
+    <div class="input-wrapper">
+    <input type="number" step="any" id="frequency" name="Frequency" placeholder="Enter frequency" required>
+    <span class="unit">Hz</span>
+    </div>
+    </div>
+    
+    <div class="form-group">
+    <label for="angle">Angle of Attack <i class="tooltip fas fa-info-circle" data-tooltip="Angle in degrees"></i></label>
+    <div class="input-wrapper">
+    <input type="number" step="any" id="angle" name="Angle of attack" placeholder="Enter angle" required>
+    <span class="unit degree-unit">&#176;</span>
+    </div>
+    </div>
+    </div>
+    
+    <div class="form-row">
+    <div class="form-group">
+    <label for="chord">Chord Length <i class="tooltip fas fa-info-circle" data-tooltip="Length in meters"></i></label>
+    <div class="input-wrapper">
+    <input type="number" step="any" id="chord" name="Chord length" placeholder="Enter length" required>
+    <span class="unit">m</span>
+    </div>
+    </div>
+    
+    <div class="form-group">
+    <label for="velocity">Free-stream Velocity <i class="tooltip fas fa-info-circle" data-tooltip="Velocity in m/s"></i></label>
+    <div class="input-wrapper">
+    <input type="number" step="any" id="velocity" name="Free-stream velocity" placeholder="Enter velocity" required>
+    <span class="unit">m/s</span>
+    </div>
+    </div>
+    </div>
+    
+    <div class="form-group">
+    <label for="suction">Suction Side Displacement <i class="tooltip fas fa-info-circle" data-tooltip="Displacement thickness in meters"></i></label>
+    <div class="input-wrapper">
+    <input type="number" step="any" id="suction" name="Suction side" placeholder="Enter displacement" required>
+    <span class="unit">m</span>
+    </div>
+    </div>
+    
+    <button type="submit" class="btn">
+    <i class="fas fa-calculator"></i> Calculate Prediction
+    </button>
+    </form>
+    </div>
+    
+    {% if show_result %}
+    <div class="result">
+    <h2>Prediction Result</h2>
+    <div class="result-value">{{ prediction_text }}</div>
+    
+    <div class="input-summary">
+    <h3>Input Parameters</h3>
+    <ul class="params-list">
+    {% for key, value in input_params.items() %}
+    <li><strong>{{ key }}:</strong> {{ value|safe }}</li>
+    {% endfor %}
+    </ul>
+    </div>
+    </div>
+    {% endif %}
+    
+    {% if error_message %}
+    <div class="error-message">
+    <h2>Error</h2>
+    <p>{{ error_message }}</p>
+    </div>
+    {% endif %}
+  </div>
+
+  <script>
+    // Add some basic form validation and interactivity
+    document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('form');
+    const inputs = document.querySelectorAll('input');
+    
+    // Add focus effects
+    inputs.forEach(input => {
+    input.addEventListener('focus', function() {
+    this.parentElement.parentElement.style.color = 'var(--primary)';
+    });
+    
+    input.addEventListener('blur', function() {
+    this.parentElement.parentElement.style.color = 'var(--dark)';
+    });
+    });
+    
+    // Form validation
+    form.addEventListener('submit', function(e) {
+    let valid = true;
+    
+    inputs.forEach(input => {
+    if (!input.value || isNaN(input.value)) {
+    valid = false;
+    input.style.borderColor = 'var(--error)';
+    input.style.backgroundColor = 'rgba(230, 57, 70, 0.05)';
+    } else {
+    input.style.borderColor = 'var(--success)';
+    input.style.backgroundColor = 'rgba(56, 176, 0, 0.05)';
+    }
+    });
+    
+    if (!valid) {
+    e.preventDefault();
+    alert('Please fill all fields with valid numbers');
+    }
+    });
+    });
+  </script>
+</body>
+</html>

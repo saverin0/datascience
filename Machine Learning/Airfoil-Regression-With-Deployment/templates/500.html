@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Server Error</title>
+  <style>
+    :root {
+    --primary: #3a86ff;
+    --primary-dark: #2667cc;
+    --border-radius: 12px;
+    }
+    
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: #212529;
+    }
+    
+    .container {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 3rem 2rem;
+    text-align: center;
+    }
+    
+    .error-code {
+    font-size: 8rem;
+    font-weight: 700;
+    color: #e9ecef;
+    line-height: 1;
+    }
+    
+    h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #212529;
+    }
+    
+    p {
+    margin-bottom: 2rem;
+    color: #6c757d;
+    }
+    
+    .btn {
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    }
+    
+    .btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="error-code">500</div>
+    <h1>Server Error</h1>
+    <p>Something went wrong on our end. Please try again later.</p>
+    <a href="{{ url_for('home') }}" class="btn">Go to Homepage</a>
+  </div>
+</body>
+</html>
